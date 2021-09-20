@@ -1,4 +1,5 @@
 import React from "react";
+import {Posts} from './Components/Posts'
 
 
 class App extends React.Component {
@@ -12,12 +13,14 @@ class App extends React.Component {
     }
 
 
-
+    handlerSomething(){
+        console.log('app.js')
+    }
 
     render() {
         return (
             <div className="App">
-                {this.state.posts.map(post => <h2 key={post.id}>{post.name}</h2>)}
+                <Posts posts={this.state.posts} cb={this.handlerSomething}/>
             </div>
         );
     }
