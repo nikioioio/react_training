@@ -10,43 +10,68 @@ class App extends React.Component {
     //         sameKey: false
     //     };
     // }
-
     state = {
-        posts: [],
-        loading: true,
-        comments: []
+        count: 0,
+        isPause: true,
+        nameButtonStart: 'Start'
     }
-    //во время запуска
-    async componentDidMount() {
+
+
+    // во время запуска
+    componentDidMount() {
+        if (localStorage.getItem('count')){
+            this.setState({count: parseInt(localStorage.getItem('count')),
+                                isPause: localStorage.getItem('isPause'),
+                                nameButtonStart: localStorage.getItem('nameButtonStart')})
+        }
         console.log('componentDidMount');
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-        const json = await response.json();
-        this.setState({posts: json, loading: false})
+        this.initInterval();
+    }
 
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     console.log(prevState);
+    //
+    // }
+
+    // componentWillUnmount() {
+    //     console.log('componentWillUnmount')
+    // }
+
+    initInterval = () => {
         this.timerId = setInterval(async () => {
-            const response = await fetch('https://jsonplaceholder.typicode.com/comments');
-            const json = await response.json();
-            this.setState({comments: json})
-        }, 3000)
 
+            if (!this.state.isPause) {
+                this.setState({count: this.state.count + 1});
+                localStorage.setItem('count', this.state.count);
+                localStorage.setItem('isPause', this.state.isPause);
+                localStorage.setItem('nameButtonStart', this.state.nameButtonStart);
+            }
+        }, 1000);
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('componentDidUpdate');
-
+    resumeInterval = () => {
+        this.state.isPause ?
+            this.setState({isPause: false, nameButtonStart: 'Stop'}):
+            this.setState({isPause: true, nameButtonStart: 'Start'})
     }
 
-    componentWillUnmount() {
-        clearInterval(this.timerId)
+    clearInterval = () => {
+        localStorage.clear()
+        this.setState({count: 0, isPause: true, nameButtonStart: 'Start'})
     }
 
 
     render() {
         return (
-            <div className="App">
-                {this.state.loading ? <h3>Loading...</h3> : <h3>
-                    {this.state.posts.length} was loaded
-                </h3>}
+            <div style={{margin: 'auto', width: '500px'}} className="App">
+                <h1>React Timer</h1>
+                <span style={mainStyle}>{this.state.count}</span>
+                <br/>
+                <div style={mainStyle1}>
+                    <button onClick={this.resumeInterval}>{this.state.nameButtonStart}</button>
+                    <button onClick={this.clearInterval}>reset</button>
+                </div>
+
             </div>
         );
     }
@@ -57,4 +82,6 @@ class App extends React.Component {
 export default App;
 
 
-const countStyle = {margin: '0 2rem'}
+const mainStyle = {position: 'absolute', left: '0', right: '0', margin: 'auto', width: '350px'}
+const mainStyle1 = {position: 'absolute', left: '0', right: '0', margin: 'auto', width: '430px'}
+// const countStyle = {position:'absolute'}
