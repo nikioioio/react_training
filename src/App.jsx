@@ -12,38 +12,41 @@ class App extends React.Component {
     // }
 
     state = {
-        count: 0
+        posts: [],
+        loading: true,
+        comments: []
     }
     //во время запуска
-    componentDidMount() {
-        console.log('componentDidMount')
+    async componentDidMount() {
+        console.log('componentDidMount');
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const json = await response.json();
+        this.setState({posts: json, loading: false})
+
+        this.timerId = setInterval(async () => {
+            const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+            const json = await response.json();
+            this.setState({comments: json})
+        }, 3000)
 
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('componentDidUpdate')
+        console.log('componentDidUpdate');
+
     }
 
     componentWillUnmount() {
-
+        clearInterval(this.timerId)
     }
 
-    handlerIncrement = () => {
-        this.setState({count: this.state.count+1});
-    }
-
-    handlerDicrement = () => {
-        this.setState({count: this.state.count-1});
-    }
 
     render() {
-        console.log('render ', this.state.count)
         return (
-            <div style={{margin: 'auto',width: '300px'}} className="App"
-            >
-                <button onClick={this.handlerDicrement}>Минус</button>
-                <b style={countStyle}>{this.state.count}</b>
-                <button onClick={this.handlerIncrement}>Плюс</button>
+            <div className="App">
+                {this.state.loading ? <h3>Loading...</h3> : <h3>
+                    {this.state.posts.length} was loaded
+                </h3>}
             </div>
         );
     }
