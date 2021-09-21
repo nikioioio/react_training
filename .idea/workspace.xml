@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="states">
-      <change afterPath="$PROJECT_DIR$/src/Components/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Posts.jsx" afterDir="false" />
+    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="проброс функции вниз по иерархии.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632126526890</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="проброс функции вниз по иерархии.">
+      <created>1632137977382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632137977382</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +121,7 @@
     </ignored-roots>
     <MESSAGE value="ss" />
     <MESSAGE value="states" />
-    <option name="LAST_COMMIT_MESSAGE" value="states" />
+    <MESSAGE value="проброс функции вниз по иерархии." />
+    <option name="LAST_COMMIT_MESSAGE" value="проброс функции вниз по иерархии." />
   </component>
 </project>

@@ -13,14 +13,14 @@ class App extends React.Component {
     }
 
 
-    handlerSomething(){
-        console.log('app.js')
+    removeEl = (id) => {
+        this.setState({posts: this.state.posts.filter(post => post.id !== id)})
     }
 
     render() {
         return (
             <div className="App">
-                <Posts posts={this.state.posts} cb={this.handlerSomething}/>
+                <Posts posts={this.state.posts} removeEl={this.removeEl}/>
             </div>
         );
     }

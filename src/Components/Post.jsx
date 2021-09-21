@@ -1,4 +1,6 @@
 export const Post = (props) => {
-    const {name, cb} = props;
-    return <h2 onClick={cb}>{name}</h2>
+    const {id, name, removeEl} = props;
+    return <h2>{name}<button onClick={()=>removeEl(id)}>delete</button></h2>
+
 }
+
