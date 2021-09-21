@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="работа с формами задача">
-      <change afterPath="$PROJECT_DIR$/src/Components/FormWithRef.jsx" afterDir="false" />
+    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="добавлен файл FormWithRef &#10;&#10;реализован метод React.createRef()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FormWithRef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FormWithRef.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632209250844</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="добавлен файл FormWithRef &#10;&#10;реализован метод React.createRef()">
+      <created>1632214348612</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632214348612</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +152,7 @@
     <MESSAGE value="проброс функции вниз по иерархии.упражнение." />
     <MESSAGE value="работа с формами" />
     <MESSAGE value="работа с формами задача" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с формами задача" />
+    <MESSAGE value="добавлен файл FormWithRef &#10;&#10;реализован метод React.createRef()" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен файл FormWithRef &#10;&#10;реализован метод React.createRef()" />
   </component>
 </project>
