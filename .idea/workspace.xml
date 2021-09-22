@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="неконтролируемые компоненты (доступ через ref)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="counter через hook usestate">
+      <change afterPath="$PROJECT_DIR$/src/Clicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yO3WtBnWPXTnnLQ7QHJjszSZ08" />
@@ -118,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632215336756</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="counter через hook usestate">
+      <created>1632324166860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632324166860</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +173,7 @@
     <MESSAGE value="работа с формами задача" />
     <MESSAGE value="добавлен файл FormWithRef &#10;&#10;реализован метод React.createRef()" />
     <MESSAGE value="неконтролируемые компоненты (доступ через ref)" />
-    <option name="LAST_COMMIT_MESSAGE" value="неконтролируемые компоненты (доступ через ref)" />
+    <MESSAGE value="counter через hook usestate" />
+    <option name="LAST_COMMIT_MESSAGE" value="counter через hook usestate" />
   </component>
 </project>
