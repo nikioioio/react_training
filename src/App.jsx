@@ -3,10 +3,17 @@ import {Clicker} from './Clicker'
 
 const App = () => {
 
+    const [isClicker, setClicker] = useState(true);
+
+
+
 
     return (
         <>
-            <Clicker/>
+
+            <button onClick={()=> setClicker(!isClicker)}>Toggle</button>
+            {isClicker && <Clicker/>}
+
         </>
     );
 

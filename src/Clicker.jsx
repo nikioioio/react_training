@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 
 export const Clicker = () => {
@@ -12,6 +12,23 @@ export const Clicker = () => {
     const handlerDicrement = () => {
         setCount(count - 1)
     }
+
+    //только при монтировании
+    // useEffect(()=> {
+    //     console.log('hello from clicker' )
+    // }, [])
+
+
+    //при изменени count и монтировании
+    // useEffect(()=> {
+    //     console.log('hello from clicker' ,count)
+    // }, [count])
+
+    //При монтировании и размонтировании
+    useEffect(()=> {
+        console.log('hello from clicker' ,count)
+        return () => console.log('goodbye')
+    }, [count])
 
 
     return (
