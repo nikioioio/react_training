@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="counter через hook usestate2">
+    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="этапы жизненного цикла useEffect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Clicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clicker.jsx" afterDir="false" />
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632324706468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="этапы жизненного цикла useEffect">
+      <created>1632326234742</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632326234742</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +191,7 @@
     <MESSAGE value="неконтролируемые компоненты (доступ через ref)" />
     <MESSAGE value="counter через hook usestate" />
     <MESSAGE value="counter через hook usestate2" />
-    <option name="LAST_COMMIT_MESSAGE" value="counter через hook usestate2" />
+    <MESSAGE value="этапы жизненного цикла useEffect" />
+    <option name="LAST_COMMIT_MESSAGE" value="этапы жизненного цикла useEffect" />
   </component>
 </project>
