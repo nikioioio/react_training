@@ -1,23 +1,11 @@
-import React, {useState} from "react";
-import {Clicker} from './Clicker'
-import {Clock} from './Clock'
-
+import {State} from './State'
 const App = () => {
 
-    const [toggled, setToggled] = useState(false)
-
-    const handler = () => {
-        setToggled(!toggled)
-    }
 
     return (
         <>
-
-            <Clicker/>
-            {/*<button onClick={handler}>Toggle</button>*/}
-            {/*{*/}
-            {/*    toggled  ? <Clock/>: <h1>Нет ничего</h1>*/}
-            {/*}*/}
+            
+            <State/>
 
         </>
     );
