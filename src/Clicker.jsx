@@ -26,6 +26,12 @@ export const Clicker = () => {
 
     useEffect(() => {
         !isPause ? initInterval() : clearInterval(timerId.current)
+
+        console.log('Тело isPause ', isPause)
+
+        return () => {
+            console.log( 'isPause ',isPause)
+        }
     }, [isPause])
 
 
@@ -57,6 +63,11 @@ export const Clicker = () => {
 
     }
 
+
+    const unmount = () => {
+        setIsPause(null)
+    }
+
     return (
         <div style={{margin: 'auto', width: '500px'}} className="App">
             <h1>React Timer</h1>
@@ -65,6 +76,7 @@ export const Clicker = () => {
             <div style={mainStyle1}>
                 <button onClick={startInterval}>{nameButtonStart}</button>
                 <button onClick={resetInterval}>reset</button>
+                {/*<button onClick={unmount}>Umn</button>*/}
             </div>
 
         </div>
