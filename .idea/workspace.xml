@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="adv hook useState">
-      <change afterPath="$PROJECT_DIR$/src/Components/Books.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contexts/Context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Books.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contexts/Context.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632395876995</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Передача контекста useContext  createContext">
+      <created>1632456897233</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632456897233</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +229,7 @@
     <MESSAGE value="counter with hooks" />
     <MESSAGE value="counter, clock with hooks" />
     <MESSAGE value="adv hook useState" />
-    <option name="LAST_COMMIT_MESSAGE" value="adv hook useState" />
+    <MESSAGE value="Передача контекста useContext  createContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="Передача контекста useContext  createContext" />
   </component>
 </project>
