@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="adv hook useState">
+      <change afterPath="$PROJECT_DIR$/src/Clicker.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
     </list>
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632459046273</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="custom hook usePrevious">
+      <created>1632460609688</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1632460609704</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +245,7 @@
     <MESSAGE value="adv hook useState" />
     <MESSAGE value="Передача контекста useContext  createContext" />
     <MESSAGE value="useReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="useReducer" />
+    <MESSAGE value="custom hook usePrevious" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom hook usePrevious" />
   </component>
 </project>
