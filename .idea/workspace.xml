@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="counter, clock with hooks">
-      <change afterPath="$PROJECT_DIR$/src/State.jsx" afterDir="false" />
+    <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="adv hook useState">
+      <change afterPath="$PROJECT_DIR$/src/Components/Books.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Contexts/Context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clicker.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clock.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +41,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../report_portal_akz-master (1)" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Кедрун Никита\PycharmProjects\reactapp\src\Contexts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -163,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632387395741</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adv hook useState">
+      <created>1632395876995</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632395876995</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +222,7 @@
     <MESSAGE value="этапы жизненного цикла useEffect" />
     <MESSAGE value="counter with hooks" />
     <MESSAGE value="counter, clock with hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="counter, clock with hooks" />
+    <MESSAGE value="adv hook useState" />
+    <option name="LAST_COMMIT_MESSAGE" value="adv hook useState" />
   </component>
 </project>
