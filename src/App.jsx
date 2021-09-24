@@ -1,40 +1,35 @@
-import React, {useReducer} from 'react';
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        case "TEST_INCREMENT_RED":
-            return {
-                ...state,
-                r: state.r + 50
-            };
-        case "TEST_INCREMENT_BLUE":
-            return {
-                ...state,
-                b: state.b + 50
-            }
-        default:
-            return state;
-
-    }
-
+import { useState, useEffect, useRef } from "react";
+// Usage
+function App() {
+  // State value and setter for our example
+  const [count, setCount] = useState(0);
+  // Get the previous value (was passed into hook on last render)
+  const prevCount = usePrevious(count);
+  // Display both current and previous count value
+  return (
+    <div>
+      <h1>
+        Now: {count}, before: {prevCount}
+      </h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
 }
+// Hook
+function usePrevious(value) {
 
-
-const App = () => {
-
-    const [{r, g, b},dispatch] = useReducer(reducer, {r: 0, g: 50, b: 50})
-
-    return (
-        <>
-            <h1>Фраза меняющая цвет</h1>
-            <button onClick={() => dispatch({type: 'TEST_INCREMENT_RED'})}>testRedIncrement</button>
-            <button onClick={() => dispatch({type: 'TEST_INCREMENT_BLUE'})}>testBlueIncrement</button>
-
-        </>
-    );
-
-
+  // The ref object is a generic container whose current property is mutable ...
+  // ... and can hold any value, similar to an instance property on a class
+  const ref = useRef();
+  console.log('Тело', ref.current)
+  // Store current value in ref
+  useEffect(() => {
+    ref.current = value;
+    console.log('ЮзЭффкект', ref.current)
+  }, [value]); // Only re-run if value changes
+  // Return previous value (happens before update in useEffect above)
+  console.log('Конец', ref.current)
+  return ref.current;
 }
-
 
 export default App;

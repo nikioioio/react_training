@@ -4,8 +4,6 @@
     <list default="true" id="a3dc3b44-c315-42fd-82e8-65dd45eac803" name="Default Changelist" comment="adv hook useState">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Books.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contexts/Context.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632456897233</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="useReducer">
+      <created>1632459046272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1632459046273</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +235,7 @@
     <MESSAGE value="counter, clock with hooks" />
     <MESSAGE value="adv hook useState" />
     <MESSAGE value="Передача контекста useContext  createContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="Передача контекста useContext  createContext" />
+    <MESSAGE value="useReducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="useReducer" />
   </component>
 </project>
